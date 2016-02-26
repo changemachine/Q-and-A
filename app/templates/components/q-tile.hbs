@@ -1,7 +1,8 @@
 {{#link-to 'q' q.id}}{{!-- router.js: {path: 'q/:qid'} --}}
   <div class="qTile">
     <h4>Q: <small>{{q.question}}</small></h4>
-    {{!-- <h5>A: <small>{{q.answer.0}}</small></h5> --}}
-    {{!-- display top answer --}}
+
+    {{log answers}}
+    <h5>A: <small>{{answers.firstObject}}</small></h5>
   </div>
 {{/link-to}}

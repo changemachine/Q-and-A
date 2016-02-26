@@ -2,8 +2,9 @@
 <div class="q-block">
 
   <div class="qMain">
-    {{#each model.questions as |q|}}
-      {{q-tile q=q}}
+    {{#each model as |q|}}
+    {{!-- <h1>{{q.answers}}</h1> --}}
+      {{q-tile q=q model=model}}
     {{/each}}
   </div>
 

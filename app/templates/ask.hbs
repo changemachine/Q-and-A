@@ -1,12 +1,11 @@
+  <form class="newQ form">
+    <div class="form-group">
+      {{input value=asker  placeholder="User Name"class="w50" id="asker"}}
+    </div>
 
-<div class="new-question">
-  <h2>New Question</h2>
+    <div class="form-group">
+      {{textarea value=question placeholder="Question?"}}
+    </div>
 
-  {{!-- <ul class="post-publish">
-    <li>{{input value=question placeholder="Question"}}</li>
-    <li>{{textarea value=user placeholder="user"}}</li>
-
-    <li><button {{action "postQuestion"}}>Publish</button></li>
-  </ul> --}}
-
-</div>
+    <button {{action "postQuestion"}}>Publish</button>
+  </form>
