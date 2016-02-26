@@ -1,0 +1,17 @@
+{
+  "questions": {
+    "0" : {
+      "question":  "How big is the sky?",
+      "asker":     "Bill",
+      "timestamp": ""
+    }
+  },
+  "answers": {
+    "0" : {
+      "answer" : "It is pretty damn big.",
+      "answerer" : "Bill",
+      "qid": "How big is the sky",
+      "timestamp" : ""
+    }
+  }
+}

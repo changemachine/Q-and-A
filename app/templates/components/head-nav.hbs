@@ -1,0 +1,27 @@
+{{yield}}
+<div class="header jumbotron">
+  <h1>Wilkommen auf Fragenheim!</h1>
+</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div name="hamburger" class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+      data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{ link-to 'Home' 'index' class="navbar-brand" }}
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{ link-to 'Ask' 'ask' }}</li>
+        <li>{{ link-to 'Answer' 'answer' }}</li>
+        {{!-- <li>{{ link-to 'Hot Questions' 'hot-q' }}</li> --}}
+      </ul>
+    </div>
+  </div>
+</nav>
