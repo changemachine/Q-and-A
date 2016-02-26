@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('ask');
   this.route('answer');
+  this.route('q', {path: '/q/:qid'});
 });
-
+// NASA-blog is passed article, then route just uses :article_id
 export default Router;

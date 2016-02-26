@@ -1,6 +1,10 @@
-<div class="q-block grid">
-  <h1>QUESTION BLOCK</h1>
-  {{!-- {{#each model.question as |question|}}
-    {{question-tile}} question=question model="model"
-  {{/each}} --}}
+
+<div class="q-block">
+
+  <div class="qMain">
+    {{#each model.questions as |q|}}
+      {{q-tile q=q}}
+    {{/each}}
+  </div>
+
 </div>

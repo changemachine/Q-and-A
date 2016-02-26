@@ -1,17 +1,24 @@
 {
-  "questions": {
-    "0" : {
-      "question":  "How big is the sky?",
-      "asker":     "Bill",
-      "timestamp": ""
-    }
-  },
-  "answers": {
-    "0" : {
-      "answer" : "It is pretty damn big.",
+  "answers" : [
+    { "answer" : "It is pretty damn big.",
       "answerer" : "Bill",
-      "qid": "How big is the sky",
+      "qid" : "How big is the sky",
+      "timestamp" : ""
+    },
+    { "answer" : "Air is big.",
+      "answerer" : "Hilda",
+      "qid" : "How big is air",
       "timestamp" : ""
     }
-  }
+  ],
+  "questions" : [
+    { "asker" : "Bill",
+      "question" : "How big is the sky?",
+      "timestamp" : ""
+    },
+    { "asker" : "Maybell",
+      "question" : "How big is air?",
+      "timestamp" : ""
+    }
+  ]
 }
