@@ -7,17 +7,16 @@ export default Ember.Route.extend({
   actions: {
     postQuestion() {
       var params = {
-        asker:     this.get('asker'),
-        question:  this.get('question'),
-        timestamp: Date.now(),
-        answers:   []
+        asker:     this.get('component.asker'),
+        question:  this.get('component.question'),
+        timestamp: Date.now()
       };
       console.log(params);
       var route = this;
       var newQ  = this.store.createRecord('question', params);
 
       newQ.save().then(function(maybeID) {
-        console.log(maybeID);
+        console.log("SAVE RETURNS: "+ maybeID);
         route.transitionTo('index');
       });
 

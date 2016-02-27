@@ -1,4 +1,5 @@
   <form class="newQ form">
+    {{!-- If attributes are left unquoted they're seen as VARIABLES. --}}
     <div class="form-group">
       {{input value=asker  placeholder="User Name"class="w50" id="asker"}}
     </div>
@@ -7,5 +8,5 @@
       {{textarea value=question placeholder="Question?"}}
     </div>
 
-    <button {{action "postQuestion"}}>Publish</button>
+    <button {{action "postQuestion" model=model}}>Publish</button>
   </form>
